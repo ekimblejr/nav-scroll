@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import './App.css';
 import Home from './screens/Home';
 import About from './screens/About';
 import Contact from './screens/Contact';
@@ -28,7 +27,7 @@ export const PageElement = styled.div`
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = React.useState('');
-  const pageNames = ['Home', 'About', 'Work', 'Contact'];
+  const pageNames = ['Home', 'About', 'Contact'];
   const onToggle = () => {
     setIsOpen(!isOpen);
   };
